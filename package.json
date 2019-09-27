@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "mime-db": "^1.42.0",
+    "node-forge": "^0.9.1",
     "puppeteer": "^1.20.0"
   }
 }
