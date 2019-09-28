@@ -68,7 +68,7 @@ if(!fs.existsSync(dir)) fs.mkdirSync(dir + assets, {recursive: true});
  */
 const getExternalResources = page => {
 	const selector
-		= 'link[rel="stylesheet"]' // links stylesheet
+		= 'link:not([rel="dns-prefetch"])' // links stylesheet
 		+ ',script[src]' // only external scripts
 		+ ',img[src]'; // only img with external src
 
@@ -136,8 +136,9 @@ function updateExternalResources(page, files) {
 			if(elem) {
 				elem.setAttribute(file.attr, file.path);
 				elem.setAttribute('orig-' + file.attr, file.value);
-				// disable integrity check, why is this needed?
-				//elem.removeAttribute('integrity');
+				// disable integrity check and allow crossorigin
+				elem.removeAttribute('integrity');
+				elem.removeAttribute('crossorigin');
 				// remove other image sizes
 				//elem.removeAttribute('srcset');
 			} else {
