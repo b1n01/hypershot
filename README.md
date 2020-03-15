@@ -1,12 +1,12 @@
 # Hypershot: standalone hypertext snapshots
 
-Hypershot let's you make standalone copy (they work offline) of websites. It works both as node module and as command line tool. It's part of `reff` project (coming soon).
+Hypershot let's you make standalone copy (they work offline) of websites. It works both as node module and as command line tool. It's part of `reff` project.
 
 ## CLI
 ### Install
 You can install the hypershot command line via `npm`:
 ```
-npm install -g hypershot
+npm install -g https://github.com/chielorenz/hypershot.git
 ```
 
 ### Usage
@@ -30,7 +30,7 @@ hypershot http://example.com/ example-com
 ### Install
 You can install the hypershot command line via npm:
 ```
-npm install hypershot
+npm install https://github.com/chielorenz/hypershot.git
 ```
 
 ### Example

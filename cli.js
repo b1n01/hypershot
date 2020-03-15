@@ -21,5 +21,5 @@ if (!path) {
 	if (!fs.existsSync(path)) fs.mkdirSync(path);
 	const folder = await hypershot(url, path);
 
-	console.log('[hypershot] Anspshot ready at', folder);
+	console.log('[hypershot] Snapshot ready at', folder);
 })();
