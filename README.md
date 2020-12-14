@@ -4,9 +4,9 @@ Hypershot let's you make standalone copy (they work offline) of websites. It wor
 
 ## CLI
 ### Install
-You can install the hypershot command line via `npm`:
+You can install the hypershot command line via `yarn`:
 ```
-npm install -g https://github.com/chielorenz/hypershot.git
+yarn global add https://github.com/chielorenz/hypershot.git
 ```
 
 ### Usage
@@ -21,26 +21,25 @@ DEBUG=true hypershot {url} {folder}
 ```
 
 ### Example
-Create a copy of `http://example.com/` and store it on `example-com` folder:
+Create a copy of `https://news.ycombinator.com/` and store it on `hacker-news` folder:
 ```
-hypershot http://example.com/ example-com
+hypershot https://news.ycombinator.com/ hacker-news
 ```
 
 ## Node module
 ### Install
-You can install the hypershot command line via npm:
+You can install the hypershot command line via yarn:
 ```
-npm install https://github.com/chielorenz/hypershot.git
+yarn add https://github.com/chielorenz/hypershot.git
 ```
 
 ### Example
 You can create a snapshot via the the hypershot function:
 ```
-const hypershot = require('hypershot');
+const hypershot = require("hypershot");
 
-hypershot('http://example.com/', 'example-com').then(path => {
-	console.log(path); // 'example-com/index.html'
-});
+hypershot("https://news.ycombinator.com/", "hacker-news")
+	.then(path => console.log(path));
 ```
 
 ## How it works
@@ -48,6 +47,3 @@ It uses [puppeteer](https://pptr.dev/) to render websites, then goes through all
 
 ## Issues
 Hypershot is still in beta, some feature are missing and it may break some times, please open issues or pull requests if you find problems or want to help.
-
-## Roadmap
-- [ ] Fetch css fonts and images
