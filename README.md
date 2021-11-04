@@ -6,7 +6,7 @@ Hypershot let's you make standalone copy (they work offline) of websites. It wor
 ### Install
 You can install the hypershot command line via `yarn`:
 ```
-yarn global add https://github.com/chielorenz/hypershot.git
+yarn global add https://github.com/b1n01/hypershot.git
 ```
 
 ### Usage
@@ -30,7 +30,7 @@ hypershot https://news.ycombinator.com/ hacker-news
 ### Install
 You can install the hypershot command line via yarn:
 ```
-yarn add https://github.com/chielorenz/hypershot.git
+yarn add https://github.com/b1n01/hypershot.git
 ```
 
 ### Example
