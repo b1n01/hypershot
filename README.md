@@ -5,18 +5,18 @@ Hypershot let's you make standalone copy (they work offline) of websites. It wor
 ## CLI
 ### Install
 You can install the hypershot command line via `yarn`:
-```
+``` sh
 yarn global add https://github.com/b1n01/hypershot.git
 ```
 
 ### Usage
 To create a snapshot: 
-```
+``` sh
 hypershot {url} {folder}
 ```
 
 To enable log use the `DEBUG` environment variable:
-```
+``` sh
 DEBUG=true hypershot {url} {folder}
 ```
 
@@ -29,13 +29,13 @@ hypershot https://news.ycombinator.com/ hacker-news
 ## Node module
 ### Install
 You can install the hypershot command line via yarn:
-```
+``` sh
 yarn add https://github.com/b1n01/hypershot.git
 ```
 
 ### Example
 You can create a snapshot via the the hypershot function:
-```
+``` js
 const hypershot = require("hypershot");
 
 hypershot("https://news.ycombinator.com/", "hacker-news")
