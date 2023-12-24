@@ -6,7 +6,7 @@ Hypershot let's you make standalone copy (they work offline) of websites. It wor
 ### Install
 You can install the hypershot command line via `yarn`:
 ``` sh
-yarn global add https://github.com/b1n01/hypershot.git
+yarn global add https://github.com/chielorenz/hypershot.git
 ```
 
 ### Usage
